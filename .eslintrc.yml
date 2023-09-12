@@ -7,6 +7,6 @@ parserOptions:
   ecmaVersion: latest
 rules:
   no-console: 0
-  import/extension: 0
+  import/extensions: 0
   import/no-unresolved: 0
   no-await-in-loop: 0
