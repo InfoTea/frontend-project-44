@@ -1,36 +1,13 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
+import playAGame from '../src/game-play.js';
 
-const getRandomFromOneToTen = () => Math.ceil(Math.random() * 10);
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getStringOfNumEven = (num) => {
-  if (num % 2) {
-    return 'no';
-  }
-  return 'yes';
+const howToPlay = () => {
+  const rightExtansion = Math.ceil(Math.random() * 10);
+  const rightAnswer = rightExtansion % 2 ? 'no' : 'yes';
+  return [rightExtansion, rightAnswer];
 };
 
-const evenGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const newRandom = getRandomFromOneToTen();
-    console.log(`Question: ${newRandom}`);
-    const rightAnswer = getStringOfNumEven(newRandom);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === rightAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".\n
-          Let's try again, Bill!`);
-      return false;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
-  return true;
-};
-
-evenGame();
+playAGame(rule, howToPlay);
