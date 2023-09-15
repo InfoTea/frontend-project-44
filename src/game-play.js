@@ -13,7 +13,7 @@ const playAGame = (rule, gameplay) => {
       console.log('Correct!');
     } else {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".\n
-          Let's try again, Bill!`);
+          Let's try again, ${userName}!`);
       return false;
     }
   }
