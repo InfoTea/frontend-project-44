@@ -7,3 +7,5 @@
 [![FirstGame](https://asciinema.org/a/MLWZyG3c0WXyPmQOhB3dbFO9L)](https://asciinema.org/a/MLWZyG3c0WXyPmQOhB3dbFO9L)
 
 [![FirstGame](https://asciinema.org/a/DIzDgjkcD9wiwuri89gLsDNTa)](https://asciinema.org/a/DIzDgjkcD9wiwuri89gLsDNTa)
+
+[![FirstGame](https://asciinema.org/a/5QpfDgpVO7tpymEUbYnnGngSJ)](https://asciinema.org/a/5QpfDgpVO7tpymEUbYnnGngSJ)
